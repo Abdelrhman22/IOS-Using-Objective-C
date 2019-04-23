@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "MADAnotation.h"
 @interface ViewController ()
+- (IBAction)click:(id)sender;
 
 @end
 
@@ -28,5 +29,18 @@
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
 {
       printf("regionDidChangeAnimated\n");
+}
+ - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+     printf("didSelectAnnotationView\n");
+}
+- (IBAction)click:(id)sender {
+    CGPoint touchPoint=[sender locationInView:_mapView];
+    CLLocationCoordinate2D touchcoordinate = [_mapView convertPoint:touchPoint toCoordinateFromView:_mapView];
+    MADAnotation * myAnnotation  = [MADAnotation new];
+    myAnnotation.coordinate=touchcoordinate;
+    myAnnotation.title=@"Arafa";
+    myAnnotation.subtitle=@"Jets";
+    [_mapView addAnnotation:myAnnotation];
 }
 @end

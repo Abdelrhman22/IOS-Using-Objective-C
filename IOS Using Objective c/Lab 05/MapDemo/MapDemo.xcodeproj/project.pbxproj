@@ -14,6 +14,7 @@
 		1E94B348226F063A00E228C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E94B346226F063A00E228C3 /* LaunchScreen.storyboard */; };
 		1E94B34B226F063A00E228C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E94B34A226F063A00E228C3 /* main.m */; };
 		1E94B353226F067A00E228C3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E94B352226F067A00E228C3 /* MapKit.framework */; };
+		1E94B356226F0E9700E228C3 /* MADAnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E94B355226F0E9700E228C3 /* MADAnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		1E94B349226F063A00E228C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E94B34A226F063A00E228C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E94B352226F067A00E228C3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1E94B354226F0E9700E228C3 /* MADAnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MADAnotation.h; sourceTree = "<group>"; };
+		1E94B355226F0E9700E228C3 /* MADAnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MADAnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 				1E94B346226F063A00E228C3 /* LaunchScreen.storyboard */,
 				1E94B349226F063A00E228C3 /* Info.plist */,
 				1E94B34A226F063A00E228C3 /* main.m */,
+				1E94B354226F0E9700E228C3 /* MADAnotation.h */,
+				1E94B355226F0E9700E228C3 /* MADAnotation.m */,
 			);
 			path = MapDemo;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E94B356226F0E9700E228C3 /* MADAnotation.m in Sources */,
 				1E94B340226F063200E228C3 /* ViewController.m in Sources */,
 				1E94B34B226F063A00E228C3 /* main.m in Sources */,
 				1E94B33D226F063200E228C3 /* AppDelegate.m in Sources */,
