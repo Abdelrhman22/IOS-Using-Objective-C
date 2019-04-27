@@ -26,6 +26,12 @@
      if( [userPhone isEqualToString:savedPhone])
      {
          _status.text=@"Sucess";
+         printf("Name  :%s",[[_userData objectForKey:@"name"] UTF8String]);
+         printf("phone :%s",[[_userData objectForKey:@"phone"] UTF8String]);
+         printf("Age : %s",[[_userData objectForKey:@"age"] UTF8String]);
+         printf("imageURL %s",[[_userData objectForKey:@"image"] UTF8String]);
+         printf("Latitude %s",[[_userData objectForKey:@"latitude"] UTF8String]);
+         printf("Longitude %s",[[_userData objectForKey:@"longitude"] UTF8String]);
      }
     else
     {
