@@ -14,6 +14,9 @@
 		BA734C9F22748443000A463B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA734C9E22748443000A463B /* Assets.xcassets */; };
 		BA734CA222748443000A463B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA734CA022748443000A463B /* LaunchScreen.storyboard */; };
 		BA734CA522748443000A463B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA734CA422748443000A463B /* main.m */; };
+		BA734CAD22748845000A463B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA734CAC22748845000A463B /* LoginViewController.m */; };
+		BA734CB022748ED4000A463B /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA734CAF22748ED4000A463B /* myAnnotation.m */; };
+		BA734CB62274922C000A463B /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA734CB52274922C000A463B /* MyTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		BA734CA122748443000A463B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA734CA322748443000A463B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA734CA422748443000A463B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA734CAB22748845000A463B /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BA734CAC22748845000A463B /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BA734CAE22748ED4000A463B /* myAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myAnnotation.h; sourceTree = "<group>"; };
+		BA734CAF22748ED4000A463B /* myAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myAnnotation.m; sourceTree = "<group>"; };
+		BA734CB42274922C000A463B /* MyTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		BA734CB52274922C000A463B /* MyTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +79,12 @@
 				BA734CA322748443000A463B /* Info.plist */,
 				BA734CA422748443000A463B /* main.m */,
 				BA734C9B2274841A000A463B /* MapRegisteration.xcdatamodeld */,
+				BA734CAB22748845000A463B /* LoginViewController.h */,
+				BA734CAC22748845000A463B /* LoginViewController.m */,
+				BA734CAE22748ED4000A463B /* myAnnotation.h */,
+				BA734CAF22748ED4000A463B /* myAnnotation.m */,
+				BA734CB42274922C000A463B /* MyTableViewController.h */,
+				BA734CB52274922C000A463B /* MyTableViewController.m */,
 			);
 			path = MapRegisteration;
 			sourceTree = "<group>";
@@ -148,6 +163,9 @@
 				BA734C972274841A000A463B /* ViewController.m in Sources */,
 				BA734CA522748443000A463B /* main.m in Sources */,
 				BA734C942274841A000A463B /* AppDelegate.m in Sources */,
+				BA734CB62274922C000A463B /* MyTableViewController.m in Sources */,
+				BA734CB022748ED4000A463B /* myAnnotation.m in Sources */,
+				BA734CAD22748845000A463B /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
