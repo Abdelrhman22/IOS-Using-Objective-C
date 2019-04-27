@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *longitude;
 - (IBAction)gesture:(id)sender;
 - (IBAction)btnRegister:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *imageLabel;
 
 - (IBAction)btnLogin:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
@@ -77,10 +78,11 @@
     NSString *agesrt=[_ageTF text];
     NSString *longitudestr=[_longitude text];
     NSString *latitudestr=[_latitude text] ;
+    NSString *url=[_imageLabel text];
     [userDefaults  setObject:namestr forKey:@"name"];
     [userDefaults  setObject:phonestr forKey:@"phone"];
     [userDefaults  setObject:agesrt forKey:@"age"];
-    [userDefaults  setObject:imageURL  forKey:@"image"];
+    [userDefaults  setObject:url  forKey:@"image"];
     [userDefaults  setObject:longitudestr forKey:@"longitude"];
     [userDefaults  setObject:latitudestr  forKey:@"latitude"];
     printf("Done\n");
@@ -124,6 +126,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     imageURL=[imagesArray objectAtIndex:indexPath.row];
+    _imageLabel.text=imageURL;
 }
 @end
 
