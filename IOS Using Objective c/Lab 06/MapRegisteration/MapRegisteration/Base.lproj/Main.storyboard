@@ -151,6 +151,7 @@
                         <outlet property="latitude" destination="8Fg-Su-91v" id="1kT-nX-Qa1"/>
                         <outlet property="longitude" destination="PME-4x-SqG" id="PHr-3p-JU8"/>
                         <outlet property="map" destination="KVS-Pv-R9u" id="t9N-Qt-SJA"/>
+                        <outlet property="myTableView" destination="5cr-M3-taF" id="ihf-r7-kd8"/>
                         <outlet property="nameTF" destination="3iv-y3-jiW" id="Mcc-ha-Ioz"/>
                         <outlet property="phoneTF" destination="eW3-9v-mBH" id="YWR-Kh-kMD"/>
                     </connections>

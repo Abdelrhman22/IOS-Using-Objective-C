@@ -20,15 +20,20 @@
 - (IBAction)btnRegister:(UIButton *)sender;
 
 - (IBAction)btnLogin:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
 @end
 
 @implementation ViewController
 {
      NSUserDefaults * userDefaults;
+     NSString *imageURL;
+     NSArray *imagesArray;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    imagesArray = @[@"a.jpg",@"b.jpg",@"c.png"];
+    imageURL=@"";
     // Do any additional setup after loading the view, typically from a nib.
     _map.delegate=self;
     _locationManager=[CLLocationManager new];
@@ -75,6 +80,7 @@
     [userDefaults  setObject:namestr forKey:@"name"];
     [userDefaults  setObject:phonestr forKey:@"phone"];
     [userDefaults  setObject:agesrt forKey:@"age"];
+    [userDefaults  setObject:imageURL  forKey:@"image"];
     [userDefaults  setObject:longitudestr forKey:@"longitude"];
     [userDefaults  setObject:latitudestr  forKey:@"latitude"];
     printf("Done\n");
@@ -96,5 +102,30 @@
     NSNumber *longi=[NSNumber numberWithDouble:view.annotation.coordinate.longitude];
     _longitude.text=[longi stringValue];
 }
-
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    UIImageView *profileImage = [cell viewWithTag:1];
+    profileImage.image=[UIImage imageNamed:[imagesArray objectAtIndex:indexPath.row]];
+    return cell;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [imagesArray count];
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 85;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    imageURL=[imagesArray objectAtIndex:indexPath.row];
+}
 @end
+
+
+
